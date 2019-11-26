@@ -4,43 +4,141 @@
     padding: 0;
 }
 
-#nav-bar {
-    position: fixed;
-    height: 100%;
-    width: 250px;
-    border-right: 2px solid black;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 50px;
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: rgb(31, 31, 31);
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #nav-bar {
+        position: relative;
+        border-right: 2px solid rgb(255, 255, 255);
+        text-align: center;
+        max-height: 250px;
+        overflow: scroll;
+        border-right: 0px;
+    }
+
+    #nav-bar li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        text-decoration: none;
+        border-top: 1pt solid rgb(255, 255, 255);;
+    }
+
+    #nav-bar h1 {
+        padding: 10px;
+    }
+
+    #main-doc {
+        padding: 20px;
+    }
+
+    .code-block {
+        background-color: rgb(12, 12, 12);
+        color: rgb(114, 114, 114);
+        padding: 20px;
+        margin: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .blue {
+        color: rgb(82, 138, 211);
+    }
+    
+    .lblue {
+        color: rgb(185, 212, 248);
+    }
+    
+    .white {
+        color: rgb(255, 255, 255);
+    }
+    
+    .brown {
+        color: rgb(197, 117, 43);
+    }
+    
+    .output {
+        background-color: rgb(12, 12, 12);
+        padding: 20px;
+        margin: 10px;
+    }
 }
 
-#nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    float: left;
-}
+@media only screen and (min-width: 768px) {
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
 
-#nav-bar li a {
-    display: block;
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-top: 1pt solid black;
-}
+    #nav-bar {
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        border-right: 2px solid black;
+        padding-top: 50px;
+    }
+    
+    #nav-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        float: left;
+    }
+    
+    #nav-bar li a {
+        display: block;
+        color: #000;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-top: 1pt solid black;
+    }
+    
+    #nav-bar li a:hover {
+        font-weight: 700;
+    }
+    
+    #nav-bar h1 {
+        padding: 5px 20px 20px 20px;
+    }
+    
+    #main-doc {
+        position: absolute;
+        margin-left: 260px;
+        padding: 50px;
+    }
 
-#nav-bar li a:hover {
-    font-weight: 700;
-}
-
-#nav-bar h1 {
-    padding: 5px 20px 20px 20px;
-}
-
-#main-doc {
-    position: absolute;
-    margin-left: 260px;
-    padding: 50px;
+    .code-block {
+        background-color: rgb(30, 30, 30);
+        color: rgb(114, 114, 114);
+        padding: 20px;
+        margin: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .blue {
+        color: rgb(82, 138, 211);
+    }
+    
+    .lblue {
+        color: rgb(185, 212, 248);
+    }
+    
+    .white {
+        color: rgb(255, 255, 255);
+    }
+    
+    .brown {
+        color: rgb(197, 117, 43);
+    }
+    
+    .output {
+        background-color: rgb(255, 243, 221);
+        padding: 20px;
+        margin: 10px;
+    }    
 }
 
 .main-header {
@@ -51,7 +149,6 @@
 
 .main-section {
     margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .section-text {
@@ -79,34 +176,4 @@ h2 {
     font-size: 15pt;
     padding-top: 15px;
     font-weight: 700;
-}
-
-.code-block {
-    background-color: rgb(30, 30, 30);
-    color: rgb(114, 114, 114);
-    padding: 20px;
-    margin: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.blue {
-    color: rgb(82, 138, 211);
-}
-
-.lblue {
-    color: rgb(185, 212, 248);
-}
-
-.white {
-    color: rgb(255, 255, 255);
-}
-
-.brown {
-    color: rgb(197, 117, 43);
-}
-
-.output {
-    background-color: rgb(255, 243, 221);
-    padding: 20px;
-    margin: 10px;
 }

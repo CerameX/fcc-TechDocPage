@@ -8,7 +8,7 @@
 
 <body>
     <nav id="nav-bar">
-        <h1>HTML Basics</h1>
+        <h1>HTML<br>Basics</h1>
         <ul>
             <li><a href="#introduction" class="nav-link">Introduction</a></li>
             <li><a href="#html-documents" class="nav-link">HTML Documents</a></li>
@@ -70,9 +70,9 @@
             </div>
             <h2>HTML Code</h2>
             <div class="code-block">
-                &lt;<span class="blue">h1</span>>This is heading 1&lt;/<span class="blue">h1</span>>
-                <br> &lt;<span class="blue">h2</span>>This is heading 2&lt;/<span class="blue">h2</span>>
-                <br> &lt;<span class="blue">h3</span>>This is heading 3&lt;/<span class="blue">h3</span>>
+                &lt;<span class="blue">h1</span>><span class="white">This is heading 1</span>&lt;/<span class="blue">h1</span>>
+                <br> &lt;<span class="blue">h2</span>><span class="white">This is heading 2</span>&lt;/<span class="blue">h2</span>>
+                <br> &lt;<span class="blue">h3</span>><span class="white">This is heading 3</span>&lt;/<span class="blue">h3</span>>
             </div>
             <h2>Output</h2>
             <div class="output">
@@ -88,8 +88,8 @@
             </div>
             <h2>HTML Code</h2>
             <div class="code-block">
-                &lt;<span class="blue">p</span>>This is a paragraph.&lt;/<span class="blue">p</span>>
-                <br>&lt;<span class="blue">p</span>>This is another paragraph.&lt;/<span class="blue">p</span>>
+                &lt;<span class="blue">p</span>><span class="white">This is a paragraph.</span>&lt;/<span class="blue">p</span>>
+                <br>&lt;<span class="blue">p</span>><span class="white">This is another paragraph.</span>&lt;/<span class="blue">p</span>>
             </div>
             <h2>Output</h2>
             <div class="output">
@@ -99,23 +99,91 @@
         </section>
         <section class="main-section" id="html-links">
             <header class="main-header">HTML Links</header>
-
+            <div class="section-text">
+                <p>HTML links are defined with the <code>&lt;<span class="blue">a</span>></code> tag:</p>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;<span class="blue">a</span> <span class="lblue">href=</span><span class="brown">"https://www.w3schools.com"</span>><span class="white">This is a link</span>/&lt;<span class="blue">a</span>> 
+            </div>
+            <div class="section-text">
+                <p>The link's destination is specified in the <code><span class="lblue">href</span></code> attribute. </p>
+                <p>Attributes are used to provide additional information about HTML elements.</p>
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <a href="https://www.w3schools.com">This is a link</a> 
+            </div>
+            
         </section>
         <section class="main-section" id="html-images">
             <header class="main-header">HTML Images</header>
-
+            <div class="section-text">
+                <p>HTML images are defined with the <code>&lt;<span class="blue">img</span>></code> tag.</p>
+                <p>The source file (<code><span class="lblue">src</span></code>), alternative text (<code><span class="lblue">alt</span></code>), <code><span class="lblue">width</span></code>, and <code><span class="lblue">height</span></code> are provided as attributes:</p>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;<span class="blue">img</span> <span class="lblue">src=</span></span><span class="brown">"w3schools.jpg"</span> <span class="lblue">alt=</span></span><span class="brown">"w3schools.com"</span> <span class="lblue">width=</span></span><span class="brown">"104"</span> <span class="lblue">height=</span></span><span class="brown">"142"</span>>
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> 
+            </div>
         </section>
         <section class="main-section" id="html-buttons">
             <header class="main-header">HTML Buttons</header>
-
+            <div class="section-text">
+                <p>HTML buttons are defined with the <code>&lt;<span class="blue">button</span>></code> tag:</p>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;<span class="blue">button</span>><span class="white">Click me</span>&lt;/<span class="blue">button</span>> 
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <button>Click me</button> 
+            </div>
         </section>
         <section class="main-section" id="html-lists">
             <header class="main-header">HTML Lists</header>
-
+            <div class="section-text">
+                <p>HTML lists are defined with the <code>&lt;<span class="blue">ul</span>></code> (unordered/bullet list) or the <code>&lt;<span class="blue">ol</span>></code> (ordered/numbered list) tag, followed by <code>&lt;<span class="blue">li</span>></code> tags (list items):</p>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;<span class="blue">ul</span>>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue">li</span>><span class="white">Coffee</span>&lt;/<span class="blue">li</span>>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue">li</span>><span class="white">Tea</span>&lt;/<span class="blue">li</span>>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue">li</span>><span class="white">Milk</span>&lt;/<span class="blue">li</span>>
+                <br>&lt;/<span class="blue">ul</span>>
+                <br>
+                <br>&lt;<span class="blue">ol</span>>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue">li</span>><span class="white">Coffee</span>&lt;/<span class="blue">li</span>>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue">li</span>><span class="white">Tea</span>&lt;/<span class="blue">li</span>>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue">li</span>><span class="white">Milk</span>&lt;/<span class="blue">li</span>>
+                <br>&lt;/<span class="blue">ol</span>>
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+                <br>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol> 
+            </div>
         </section>
         <section class="main-section" id="reference">
             <header class="main-header">Reference</header>
-
+            <div class="section-text">
+                <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/html/html_basic.asp">w3schools</a>.</p>
+            </div>
         </section>
     </main>
 </body>

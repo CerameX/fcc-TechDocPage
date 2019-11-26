@@ -3,12 +3,14 @@
 
 <head>
     <title>HTML Basics</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav id="nav-bar">
         <h1>HTML Basics</h1>
         <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
             <li><a href="#html-documents" class="nav-link">HTML Documents</a></li>
             <li><a href="#html-headings" class="nav-link">HTML Headings</a></li>
             <li><a href="#html-paragraphs" class="nav-link">HTML Paragraphs</a></li>
@@ -20,9 +22,32 @@
         </ul>
     </nav>
     <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header class="main-header">Introduction</header>
+            <div class="section-text">
+                <p>
+                    HTML is the standard markup language for creating Web pages.
+                </p>
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTML elements are represented by tags</li>
+                    <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+                    <li>Browsers do not display the HTML tags, but use them to render the content of the page </li>
+                </ul>
+                <h2>Example</h2>
+                <code>
+                    
+                </code>
+            </div>
+        </section>
         <section class="main-section" id="html-documents">
             <header class="main-header">HTML Documents</header>
-
+            <div class="section-text">
+                <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+            </div>
         </section>
         <section class="main-section" id="html-headings">
             <header class="main-header">HTML Headings</header>

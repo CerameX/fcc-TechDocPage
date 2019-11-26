@@ -37,25 +37,65 @@
                     <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
                     <li>Browsers do not display the HTML tags, but use them to render the content of the page </li>
                 </ul>
-                <h2>Example</h2>
-                <code>
-                    
-                </code>
             </div>
         </section>
         <section class="main-section" id="html-documents">
             <header class="main-header">HTML Documents</header>
             <div class="section-text">
-                <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+                <p>All HTML documents must start with a document type declaration: <code>&lt;!<span class="blue">DOCTYPE</span> <span class="lblue">html</span>></code>.</p>
+                <p>The HTML document itself begins with <code>&lt;<span class="blue">html</span>></code> and ends with <code>&lt;/<span class="blue">html</span>></code>.</p>
+                <p>The visible part of the HTML document is between <code>&lt;<span class="blue">body</span>></code> and <code>&lt;/<span class="blue">body</span>></code>. </p>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;!<span class="blue">DOCTYPE</span> <span class="lblue">html</span>>
+                <br> &lt;<span class="blue">html</span>>
+                <br> &lt;<span class="blue">body</span>><br>
+                <br> &lt;<span class="blue">h1</span>><span class="white">My First Heading</span>&lt;/<span class="blue">h1</span>>
+                <br> &lt;<span class="blue">p</span>><span class="white">My first paragraph.</span>&lt;/<span class="blue">p</span>><br>
+                <br> &lt;/<span class="blue">body</span>>
+                <br> &lt;/<span class="blue">html</span>>
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
             </div>
         </section>
         <section class="main-section" id="html-headings">
             <header class="main-header">HTML Headings</header>
-
+            <div class="section-text">
+                <p>HTML headings are defined with the <code>&lt;<span class="blue">h1</span>></code> to <code>&lt;<span class="blue">h6</span>></code> tags.</p>
+                <p><code>&lt;<span class="blue">h1</span>></code> defines the most important heading. <code>&lt;<span class="blue">h6</span>></code> defines the least important heading: </p>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;<span class="blue">h1</span>>This is heading 1&lt;/<span class="blue">h1</span>>
+                <br> &lt;<span class="blue">h2</span>>This is heading 2&lt;/<span class="blue">h2</span>>
+                <br> &lt;<span class="blue">h3</span>>This is heading 3&lt;/<span class="blue">h3</span>>
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <h1>This is heading 1</h1>
+                <h2>This is heading 2</h2>
+                <h3>This is heading 3</h3>
+            </div>
         </section>
         <section class="main-section" id="html-paragraphs">
             <header class="main-header">HTML Paragraphs</header>
-
+            <div class="section-text">
+                <p>HTML paragraphs are defined with the <code>&lt;<span class="blue">p</span>></code> tag:<code>&lt;/<span class="blue">p</span>></code>
+            </div>
+            <h2>HTML Code</h2>
+            <div class="code-block">
+                &lt;<span class="blue">p</span>>This is a paragraph.&lt;/<span class="blue">p</span>>
+                <br>&lt;<span class="blue">p</span>>This is another paragraph.&lt;/<span class="blue">p</span>>
+            </div>
+            <h2>Output</h2>
+            <div class="output">
+                <p>This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+            </div>
         </section>
         <section class="main-section" id="html-links">
             <header class="main-header">HTML Links</header>
